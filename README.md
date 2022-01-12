@@ -12,6 +12,23 @@ You are free to use, modify and copy the code.
 GeneticSearchCV has all parameters of sklearn's GridsearchCV. See sklearn 
 documentation to learn more
 
+#### Example
+    >>> from sklearn import svm, datasets
+    >>> from genetic_search.model_selection import GeneticSearchCV
+    >>> iris = datasets.load_iris()
+    >>> parameters = {'kernel':('linear', 'rbf'), 'C':[1, 10]}
+    >>> svc = svm.SVC()
+    >>> clf = GeneticSearchCV(svc, parameters)
+    >>> clf.fit(iris.data, iris.target)
+    GridSearchCV(estimator=SVC(),
+                 param_grid={'C': [1, 10], 'kernel': ('linear', 'rbf')})
+    >>> sorted(clf.cv_results_.keys())
+    ['mean_fit_time', 'mean_score_time', 'mean_test_score',...
+     'param_C', 'param_kernel', 'params',...
+     'rank_test_score', 'split0_test_score',...
+     'split2_test_score', ...
+     'std_fit_time', 'std_score_time', 'std_test_score']
+
 #### Additional parameter documentation
 - population_size : int, dedault=50  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Size of population used in genetic algorithm.  

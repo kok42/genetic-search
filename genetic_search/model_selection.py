@@ -259,7 +259,7 @@ class GeneticSearchCV(BaseSearchCV):
     Examples
     --------
     >>> from sklearn import svm, datasets
-    >>> TODO: from ... GridSearchCV
+    >>> from genetic_search.model_selection import GeneticSearchCV
     >>> iris = datasets.load_iris()
     >>> parameters = {'kernel':('linear', 'rbf'), 'C':[1, 10]}
     >>> svc = svm.SVC()
