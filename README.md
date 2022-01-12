@@ -30,11 +30,11 @@ documentation to learn more
      'std_fit_time', 'std_score_time', 'std_test_score']
 
 #### Additional parameter documentation
-- population_size : int, dedault=50  
+- population_size : int, dedault=10  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Size of population used in genetic algorithm.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Larger sizes lead to more calculations as well as to more accurate parameters.
 
-- max_generations : int, default=50,  
+- max_generations : int, default=10,  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amount of generations used in genetic algorithm.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Larger sizes lead to more calculations as well as to more accurate parameters.
 - tournament_size : int, default=None,  
