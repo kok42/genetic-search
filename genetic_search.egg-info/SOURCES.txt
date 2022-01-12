@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+genetic_search/__init__.py
+genetic_search/model_selection.py
+genetic_search.egg-info/PKG-INFO
+genetic_search.egg-info/SOURCES.txt
+genetic_search.egg-info/dependency_links.txt
+genetic_search.egg-info/requires.txt
+genetic_search.egg-info/top_level.txt

@@ -1,10 +1,19 @@
-# Genetic search 
+Metadata-Version: 2.1
+Name: genetic-search
+Version: 0.1.0
+Summary: Hyperparameter search via genetic algorithm
+Home-page: https://github.com/kok42/genetic-search
+Author: Menshenin Andrew
+Author-email: menshenin-2001@mail.ru
+License: The Universal Permissive License (UPL)
+Platform: UNKNOWN
+License-File: LICENCE
 
 This is a tool for optimising sklearn-compatible models' hyperparameters.
 It uses genetic algorithm so, it is much faster than GridSearchCV and gives
 more consistent results than RandomizedSearchCV.
 
+
 The class GeneticSearchCV is extended of the sklearn's class BaseSearchCV, so
 it has the same functionality as sklearn's searches.
 
-You are free to use, modify and copy the code.
